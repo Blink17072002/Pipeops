@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(78, 78, 119);
+    padding: 10px 20px;
+}
+
+.navbar-left h3 {
+    color: #fff;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navbar-right a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.login {
+    border: 2px solid yellow;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.cart-icon {
+    width: 30px;
+    /* Adjust the size as needed */
+    height: auto;
+}
+
+.cart-counter {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.item .pic img {
+    max-width: 150px;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.item .name h3 {
+    margin: 10px 0;
+}
+
+.item .price h3 {
+    margin: 10px 0;
+    color: #e91e63;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.actions a.add {
+    background-color: #28a745;
+}
+
+.actions a.view {
+    background-color: #17a2b8;
+}
+
+.actions a:hover {
+    opacity: 0.8;
+}
